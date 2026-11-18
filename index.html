@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffeaf1">
+<title>For Isha, with love — Vansh ♥</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+:root{--ink:#74475c;--muted:#a77b8e;--pink:#ed83a8;--deep:#cf5c86;--pale:#fff3f6;--line:#f7d6e1}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',sans-serif;background:linear-gradient(145deg,#fff5f7 0%,#ffe6ef 48%,#fff7ed 100%);overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(2px);pointer-events:none;z-index:0}
+body:before{width:360px;height:360px;background:#ffd2e1aa;top:-150px;left:-130px}
+body:after{width:420px;height:420px;background:#fff0c9aa;bottom:-220px;right:-160px}
+main{position:relative;z-index:1;min-height:100vh;display:grid;place-items:center;padding:25px 14px}
+.screen{display:none;width:min(760px,100%);min-height:min(780px,calc(100vh - 50px));padding:clamp(24px,5vw,52px);border:1px solid #ffffffd9;border-radius:34px;background:#ffffffb8;box-shadow:0 24px 80px #b95d7d1c,inset 0 1px 0 #fff;backdrop-filter:blur(14px);text-align:center;animation:arrive .65s cubic-bezier(.2,.8,.2,1)}
+.screen.active{display:flex;flex-direction:column;align-items:center;justify-content:center}
+@keyframes arrive{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#c27894;font-weight:700}
+h1,h2{font-family:'Playfair Display',serif;font-weight:600}
+h1{font-size:clamp(3rem,9vw,6.2rem);line-height:.98;margin:18px 0 15px;color:#c95682;letter-spacing:-.045em}
+h1 em{color:#ed91af;font-weight:600}
+h2{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.08;margin:15px 0;color:#c95682}
+p{line-height:1.8}
+.intro-copy{max-width:510px;font-size:1.08rem;color:#906a7b;margin:4px auto 24px}
+.names{font-family:'Playfair Display',serif;color:#b9517b;font-size:1.25rem;margin:0 0 24px}
+.heart-orbit{width:190px;height:155px;position:relative;margin:10px auto 18px;display:grid;place-items:center}
+.big-heart{font-size:94px;filter:drop-shadow(0 12px 12px #d95c8730);animation:heartbeat 1.5s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.float{position:absolute;font-size:23px;animation:float 3s ease-in-out infinite}
+.f1{top:2px;left:14px}.f2{right:5px;top:25px;animation-delay:.8s}.f3{bottom:4px;left:30px;animation-delay:1.4s}.f4{right:30px;bottom:0;animation-delay:.4s}
+@keyframes float{50%{transform:translateY(-12px) rotate(10deg)}}
+button{font-family:inherit;border:0;border-radius:999px;padding:15px 25px;font-size:.96rem;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s}
+button:hover{transform:translateY(-3px);box-shadow:0 12px 24px #d66a902b}
+button:active{transform:scale(.97)}
+.primary{color:white;background:linear-gradient(110deg,#e879a0,#d85d88);box-shadow:0 9px 22px #d66a9035}
+.soft{color:#bd6285;background:#fff0f5;border:1px solid #f8d5e1}
+.btn-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.tiny{font-size:.8rem;color:#b18a9a;margin-top:18px}
+.sparkle{color:#e8a0b6}
+.counter-card{width:100%;max-width:620px;padding:23px 18px;border-radius:25px;background:linear-gradient(135deg,#fff7f9,#fff);border:1px solid #f9dce5;margin:15px 0 22px}
+.counter-label{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:#b77b91;font-weight:700}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:17px}
+.unit{padding:14px 5px;border-radius:17px;background:#fff0f5;border:1px solid #f8dce5}
+.num{display:block;font-size:clamp(1.8rem,5vw,3rem);font-weight:700;color:#d65e89;font-variant-numeric:tabular-nums}
+.unit small{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:#a87c8e}
+.since{font-size:.83rem;color:#a77b8e;margin:16px 0 0}
+.letter{max-width:540px;color:#8f687a;font-size:1.04rem;margin:0 auto}
+.letter strong{color:#c65c83}
+.signature{font-family:'Playfair Display',serif;font-style:italic;color:#c65c83;font-size:1.3rem;margin-top:13px}
+.step-pill{display:inline-flex;align-items:center;gap:8px;background:#fff0f5;border:1px solid #f7d7e2;border-radius:99px;padding:8px 14px;color:#bb6c89;font-size:.75rem;font-weight:700;letter-spacing:.08em}
+.cake-stage{width:100%;min-height:300px;display:grid;place-items:center;position:relative;margin:3px auto 0}
+.cake{position:relative;width:270px;height:225px;transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+.plate{position:absolute;bottom:8px;left:0;width:270px;height:22px;border-radius:50%;background:linear-gradient(#fff,#f2d9e3);box-shadow:0 7px 0 #e9c4d1}
+.tier{position:absolute;left:29px;width:212px;bottom:28px;height:103px;border-radius:18px 18px 15px 15px;background:repeating-linear-gradient(90deg,#f4a2b9 0 18px,#ffd1dc 18px 36px);box-shadow:inset 0 -10px #d96b8b20}
+.frosting{position:absolute;left:29px;bottom:117px;width:212px;height:38px;border-radius:50%;background:#fff6f7;z-index:2;box-shadow:0 5px 0 #f7dce4}
+.drip{position:absolute;top:20px;width:18px;height:24px;background:#fff6f7;border-radius:0 0 12px 12px}
+.drip:nth-child(1){left:35px;height:22px}.drip:nth-child(2){left:84px;height:30px}.drip:nth-child(3){left:145px;height:22px}.drip:nth-child(4){left:180px;height:28px}
+.cake-heart{position:absolute;z-index:3;bottom:142px;left:119px;color:#e76f99;font-size:29px}
+.candle{position:absolute;z-index:4;bottom:151px;width:12px;height:54px;border-radius:6px;background:repeating-linear-gradient(45deg,#fff 0 7px,#ed8cab 7px 14px);box-shadow:0 2px 5px #b45b7b22}
+.c1{left:83px}.c2{left:129px}.c3{left:175px}
+.flame{position:absolute;top:-21px;left:2px;width:9px;height:17px;border-radius:50% 50% 45% 45%;background:radial-gradient(ellipse at 50% 72%,#fff9b8 0 24%,#ffc14f 45%,#ff805b 76%);filter:drop-shadow(0 0 8px #ffb34b);animation:flicker .65s infinite alternate;transform-origin:bottom}
+@keyframes flicker{to{transform:rotate(8deg) scale(.86)}}
+.cake.blown .flame{display:none}
+.cake.cut .tier{clip-path:polygon(0 0,100% 0,100% 100%,58% 100%,48% 45%,42% 100%,0 100%)}
+.cake.cut{transform:rotate(-2deg) scale(1.03)}
+.cake.cut:after{content:"";position:absolute;z-index:5;left:134px;top:78px;height:110px;border-left:2px dashed #c65c83;transform:rotate(13deg)}
+.instruction{color:#9b7183;margin:0;max-width:500px}
+.feedback{min-height:32px;color:#bd5c83;font-weight:700;margin:13px 0 0}
+.progress{display:flex;gap:7px;margin:0 0 20px}
+.progress i{width:25px;height:5px;border-radius:9px;background:#f3d5df}
+.progress i.on{background:#df7197}
+.footer{font-size:.76rem;color:#b58e9d;margin-top:24px}
+.confetti{position:fixed;top:-25px;z-index:10;pointer-events:none;font-size:22px;animation:fall 3.6s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}
+@media(max-width:520px){main{padding:12px}.screen{min-height:calc(100vh - 24px);padding:25px 17px;border-radius:27px}.timer{gap:5px}.unit{padding:12px 2px}.cake-stage{transform:scale(.88);margin:-10px auto}.intro-copy{font-size:1rem}}
+
+.song-player{width:min(340px,100%);margin:12px auto 4px;accent-color:#d85d88}
+.song-player audio{width:100%;height:42px}
+.music-toggle{position:fixed;right:18px;bottom:18px;z-index:30;border:1px solid #f4cbd9;
+  color:#b9517b;background:#fff8fb;padding:12px 17px;box-shadow:0 8px 25px #b95d7d22;
+  font-size:.86rem}
+.music-toggle.playing{color:#fff;background:linear-gradient(110deg,#e879a0,#d85d88)}
+@media(max-width:520px){.music-toggle{right:12px;bottom:12px;padding:11px 14px}}
+
+</style>
+</head>
+<body>
+<button class="music-toggle" id="musicToggle" type="button" onclick="toggleSong()">♫ Play our song</button>
+<main>
+<section class="screen active" id="s1">
+  <div class="eyebrow">a tiny surprise made just for you</div>
+  <div class="heart-orbit"><span class="float f1">✦</span><span class="float f2">♡</span><span class="float f3">🌷</span><span class="float f4">✨</span><div class="big-heart">💗</div></div>
+  <h1>Hi, Isha <em>♥</em></h1>
+  <p class="names">From your Vansh, with all my heart</p>
+  <p class="intro-copy">You know what? It's been <strong>34 beautiful days</strong> since your first text found its way to me. And somehow, one little “hi” turned into my favourite notification. 🥹</p>
+  <p class="intro-copy">I made a little something for us. No big reason — just because <strong>you make ordinary days feel special.</strong></p>
+  <div class="song-player"><div class="tiny">Our song · Taylor Swift — Love Story ♫</div><audio id="loveSong" controls preload="metadata" loop><source src="./love-story.mp3" type="audio/mpeg">Your browser does not support MP3 audio.</audio></div>
+  <button class="primary" onclick="startSong();go(2)">Open your little surprise 💌</button>
+  <div class="tiny">psst… this is our own little corner of the universe</div>
+</section>
+
+<section class="screen" id="s2">
+  <div class="progress"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+  <div class="eyebrow">chapter one · where it all began</div>
+  <h2>34 days of <em>us</em> 💞</h2>
+  <div class="counter-card">
+    <div class="counter-label">Every second since your first text</div>
+    <div class="timer">
+      <div class="unit"><span class="num" id="days">00</span><small>Days</small></div>
+      <div class="unit"><span class="num" id="hours">00</span><small>Hours</small></div>
+      <div class="unit"><span class="num" id="minutes">00</span><small>Minutes</small></div>
+      <div class="unit"><span class="num" id="seconds">00</span><small>Seconds</small></div>
+    </div>
+    <div class="since">15 October 2026 · 11:29 PM · your first text 💌</div>
+  </div>
+  <p class="letter">I still love that our story began with <strong>your message</strong>. You probably had no idea how much happiness that one notification would bring me. Since then, every little chat has become a memory I want to keep.</p>
+  <p class="letter">Thank you for being my favourite person to talk to. Here's to more late-night conversations, silly jokes, unexpected smiles and a million moments we haven't lived yet. <span class="sparkle">✨</span></p>
+  <div class="signature">Always choosing you, Isha. — Vansh</div>
+  <div class="btn-row"><button class="primary" onclick="go(3)">There's one more surprise… 🎂</button></div>
+</section>
+
+<section class="screen" id="s3">
+  <div class="progress"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+  <div class="step-pill">🎂 CHAPTER TWO · MAKE A WISH</div>
+  <h2>Close your eyes, pretty girl</h2>
+  <p class="instruction">Imagine we're sitting together, with this little cake between us. Make your sweetest wish… then blow out the candles. 💗</p>
+  <div class="cake-stage">
+    <div class="cake" id="cake">
+      <div class="candle c1"><i class="flame"></i></div><div class="candle c2"><i class="flame"></i></div><div class="candle c3"><i class="flame"></i></div>
+      <div class="cake-heart">♥</div><div class="frosting"><i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i></div>
+      <div class="tier"></div><div class="plate"></div>
+    </div>
+  </div>
+  <button class="primary" id="blow">🌬️ Blow the candles</button>
+  <div class="feedback" id="blowmsg" aria-live="polite">I'll make a wish too: many more days with you. 🥰</div>
+  <div class="btn-row"><button class="soft" onclick="go(2)">← Back</button><button class="soft" id="toCake" disabled>Now let's cut our cake 🍰</button></div>
+</section>
+
+<section class="screen" id="s4">
+  <div class="progress"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+  <div class="step-pill">🍰 CHAPTER THREE · THE SWEETEST PART</div>
+  <h2>One cake, two hearts</h2>
+  <p class="instruction">The candles are out, the wish is made… now it's time for the sweetest part. Ready to cut our little celebration cake?</p>
+  <div class="cake-stage">
+    <div class="cake" id="cake2">
+      <div class="cake-heart">♥</div><div class="frosting"><i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i></div>
+      <div class="tier"></div><div class="plate"></div>
+    </div>
+  </div>
+  <button class="primary" id="cut">🔪 Cut our cake together</button>
+  <div class="feedback" id="cutmsg" aria-live="polite">You get the first slice, obviously. 💕</div>
+  <div class="letter" id="finalnote" hidden><strong>Happy 34 days, my Isha!</strong><br>Thank you for making my days softer, brighter and happier. This is only the beginning of our story. I can't wait for all the chapters ahead. ❤️</div>
+  <div class="signature">Yours, Vansh ♡</div>
+  <div class="btn-row"><button class="soft" onclick="go(1)">↻ Start our surprise again</button></div>
+  <div class="footer">Made with love, just for Isha · 15.10.2026</div>
+</section>
+</main>
+<script>
+
+const loveSong=document.getElementById('loveSong');
+const musicToggle=document.getElementById('musicToggle');
+function updateMusicButton(){
+  const playing=!loveSong.paused;
+  musicToggle.textContent=playing?'♫ Pause our song':'♫ Play our song';
+  musicToggle.classList.toggle('playing',playing);
+}
+function startSong(){
+  loveSong.play().then(()=>{
+    updateMusicButton();
+  }).catch(()=>{
+    musicToggle.textContent='♫ Tap to play our song';
+  });
+}
+function toggleSong(){
+  if(loveSong.paused){startSong();}
+  else{loveSong.pause();updateMusicButton();}
+}
+loveSong.addEventListener('play',updateMusicButton);
+loveSong.addEventListener('pause',updateMusicButton);
+
+const start=new Date('2026-10-15T23:29:00+05:30').getTime();
+function tick(){let t=Math.max(0,Date.now()-start),d=Math.floor(t/86400000);t%=86400000;let h=Math.floor(t/3600000);t%=3600000;let m=Math.floor(t/60000),s=Math.floor(t%60000/1000);[['days',d],['hours',h],['minutes',m],['seconds',s]].forEach(([id,v])=>{let el=document.getElementById(id);if(el)el.textContent=String(v).padStart(2,'0')})}
+tick();setInterval(tick,1000);
+function go(n){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById('s'+n).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+function celebrate(){let a=['💗','💕','✨','🌸','💖','♡'];for(let i=0;i<42;i++){let e=document.createElement('span');e.className='confetti';e.textContent=a[Math.floor(Math.random()*a.length)];e.style.left=Math.random()*100+'vw';e.style.animationDelay=Math.random()*.9+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),4500)}}
+document.getElementById('blow').onclick=()=>{document.getElementById('cake').classList.add('blown');document.getElementById('blowmsg').textContent='Wish sent to the universe! May it bring us endless smiles. ✨';document.getElementById('blow').textContent='♡ Wish made!';document.getElementById('toCake').disabled=false;document.getElementById('toCake').classList.remove('soft');document.getElementById('toCake').classList.add('primary');celebrate()};
+document.getElementById('toCake').onclick=()=>go(4);
+document.getElementById('cut').onclick=()=>{document.getElementById('cake2').classList.add('cut');document.getElementById('cutmsg').textContent='Cake officially cut! Saving the biggest slice for you, Isha. 🍰💗';document.getElementById('finalnote').hidden=false;document.getElementById('cut').textContent='Celebration complete! 💞';celebrate()};
+</script>
+</body>
+</html>
